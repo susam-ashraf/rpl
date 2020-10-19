@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+@font-face {
+    font-family: goboldLowplus;
+    src: url(../fonts/gobold_lowplus.ttf);
+}
+
 header{
     position: relative;
 }
@@ -7,9 +14,287 @@ header img{
 }
 header .content{
     position: absolute;
-    top: 40vh;
+    top: 38vh;
     left: 7vw;
+    text-align: center;
+}
+header .content h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 60px;
+    color: #4E2B71;
+}
+header .content h3{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 36px;
+    color: #415F8D;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+header .content .btn-primary {
+    font-size: 30px;
+    color: #fff;
+    background-color: #4E2B71;
+    border-color: #4E2B71;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'goboldLowplus', cursive;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    color: #4E2B71;
+    font-family: 'goboldLowplus', cursive;
+    padding: 50px 30px;
+}
+.bg-light {
+    background-color: #fff !important;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
 }
 .about_us{
-    height: 2000px;
+
+}
+.about_left{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.about_left img{
+    width: 100%;
+}
+.about_left h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 53px;
+    color: #4E2B71;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    margin-right: 100px;
+}
+.about_right{
+    background: url("../images/about_right_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.about_right p{
+    margin-top: 300px;
+}
+.success {
+    padding-top: 50px;
+}
+.success_banner_img{
+    position: relative;
+}
+.success_banner_img img{
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 37vw;
+    z-index: 15;
+}
+.success_banner_txt{
+    position: relative;
+}
+.success_box{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #707070;
+    border-radius: 45px;
+    width: 465px;
+    height: 185px;
+    background: #FDFFFC;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+}
+.success_box h2{
+    margin-top: 80px;
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.count_wrap{
+    background: #4E2B71;
+    border-radius: 20px;
+    padding: 20px;
+}
+.success_count{
+    background: #F3F3F3;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/* Step 1: start with resetting some defaults */
+
+* {
+    margin: 0 auto;
+    /*padding: 0;*/
+    /*max-width: 100%;  stopped for owl carousel  */
+}
+
+
+/* Step 2: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
+
+.grid {
+    text-align: center;
+    max-width: 97vw;
+    margin: 2.5vw auto;
+}
+
+
+/* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+
+.grid-item {
+    padding: 5px;
+    box-sizing: border-box;
+    display:inline;
+    position: relative;
+}
+.grid-item h4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+}
+
+.product_img_left{
+    width: 350px;
+    height: 295px;
+    position: relative;
+}
+.product_img_left img{
+    width: 100%;
+}
+.product_img_left::after{
+    content: "Accessories";
+    width: 100%;
+    height: 100%;
+    background: url("../images/accessories.png");
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+}
+.product_img_right{
+    width: 350px;
+    height: 295px;
+    position: relative;
+}
+.product_img_right img{
+    width: 100%;
+}
+.product_img_right::after{
+    content: "Home textile";
+    width: 100%;
+    height: 100%;
+    background: url("../images/home_textile.png");
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+
+
+
+
+
+
+
+
+
+/* Step 4: Add media queries (subjective) to make the whole grid resposive. */
+
+@media (min-width: 500px) {
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid-item {
+        width: 33.333%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .grid-item {
+        width: 25%;
+    }
+}
+
+@media (min-width: 2100px) {
+    .grid-item {
+        width: 20%;
+    }
+}
+
+
+
+
+
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+
+.beautiful_bangladesh img{
+    width: 100%;
+}
+footer{
+    background: #404040;
+}
+.footer_left .social a{
+    display: inline;
+    padding: 10px 20px;
+    background: #fff;
+}
+.footer_middle a{
+    display: block;
+}
+.footer_right{
+    position: relative;
+}
+.footer_right img{
+    width: 100%;
+}
+.footer_right_text{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
