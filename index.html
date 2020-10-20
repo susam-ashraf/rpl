@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
 <!--    <link href="css/font-awesome.css" rel="stylesheet">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="icofont/icofont.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Hello, world!</title>
 </head>
 <body>
@@ -59,12 +60,10 @@
 
     <section class="about_us">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 about_left">
-                    <h1 class="text-right">About Us</h1>
-                    <img src="images/about_us.png" alt="">
-                </div>
-                <div class="col-md-4 about_right">
+
+            <h1 class="text-center">About Us</h1>
+            <div class="d-flex justify-content-end">
+                <div class="about_right">
                     <p>The Royal Purple Linen aims to
                         showcase the strengths of its
                         versatile and abundant range to
@@ -79,6 +78,7 @@
                     <button type="button" class="btn btn-light">Read More</button>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -98,30 +98,30 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="count_wrap text-center">
-                        <h1><span class="counter">2,523</span></h1>
-                        <h3>Customers</h3>
-                        <i class="fa fa-users"></i>
+                        <i class="icofont-award"></i>
+                        <h1><span class="counter">250</span></h1>
+                        <h3>Awards Win</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="count_wrap text-center">
-                        <h1><span class="counter">63,075</span></h1>
-                        <h3>Total Web Pages</h3>
-                        <i class="fa fa-desktop"></i>
+                        <i class="icofont-simple-smile"></i>
+                        <h1><span class="counter">2500</span>+</h1>
+                        <h3>Happy Clients</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="count_wrap text-center">
-                        <h1><span class="counter">12,218</span></h1>
-                        <h3>Cups Of Coffee</h3>
-                        <i class="fa fa-coffee"></i>
+                        <i class="icofont-users-social"></i>
+                        <h1><span class="counter">210</span></h1>
+                        <h3>Our Workers</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="count_wrap text-center">
-                        <h1><span class="counter">12,218</span></h1>
-                        <h3>Cups Of Coffee</h3>
-                        <i class="fa fa-coffee"></i>
+                        <i class="icofont-tasks"></i>
+                        <h1><span class="counter">3000</span>+</h1>
+                        <h3>Project Done</h3>
                     </div>
                 </div>
             </div>
@@ -130,63 +130,60 @@
     </section>
 
     <section class="product_line">
-        <!-- Part 2: Create the grid -->
+
+        <h1 class="text-center">Product LIne</h1>
+
+        <div class="container">
+            <!-- Part 2: Create the grid -->
+
+            <!-- Step 1: Start with a the main grid wrapper-->
+            <div class="grid">
+
+                <!-- Step 2: Add grid items--->
+
+                <div class="grid-item">
+                    <img src="images/mesonry/pexels-harsh-kushwaha-2058716.jpg" />
+                    <h4>Women's wear</h4>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/mesonry/rectangle8.jpg">
+                </div>
+
+                <!-- Step 3: repeat...--->
+                <div class="grid-item">
+                    <img src="images/mesonry/pexels-daria-shevtsova-1261378.jpg">
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/mesonry/jonathan-borba-GrA9fRFrALs-unsplash.jpg" />
+                </div>
 
 
-        <!-- Step 1: Start with a the main grid wrapper-->
-<!--        <div class="grid">-->
+                <div class="grid-item">
+                    <img src="images/mesonry/rectangle8.jpg" />
+                </div>
 
-<!--            &lt;!&ndash; Step 2: Add grid items-&ndash;&gt;-->
+                <div class="grid-item">
+                    <img src="images/mesonry/rectangle8.jpg" />
+                </div>
 
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/736x/00/37/03/0037037f1590875493f413c1fdbd52b1&#45;&#45;cool-beards-inspiring-photography.jpg" />-->
-<!--                <h4>Women's wear</h4>-->
-<!--            </div>-->
+                <div class="grid-item">
+                    <img src="images/mesonry/pexels-hassan-ouajbir-1306248.jpg" />
+                </div>
 
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/736x/cd/90/d9/cd90d9de63fa2c8e5c5e7117e27b5c18&#45;&#45;gritty-portrait-photography-studio-photography.jpg">-->
-<!--            </div>-->
+                <div class="grid-item">
+                    <img src="images/mesonry/pexels-victoria-borodinova-1620760.jpg" />
+                </div>
 
-<!--            &lt;!&ndash; Step 3: repeat...-&ndash;&gt;-->
-<!--            <div class="grid-item">-->
-<!--                <img src="https://1.bp.blogspot.com/-9QM7ciGXRkQ/V1hsB-wNLBI/AAAAAAAAMoA/eYbSHs00PTAjrI4QAmvYAIGCUe1AuRAnwCLcB/s1600/bryan_cranston_0095.jpg">-->
-<!--            </div>-->
+                <div class="grid-item">
+                    <img src="images/mesonry/rectangle8.jpg" />
+                </div>
 
-<!--            <div class="grid-item">-->
-<!--                <img src="http://webneel.com/sites/default/files/images/project/best-portrait-photography-regina-pagles%20(10).jpg" />-->
-<!--            </div>-->
+            </div>
+            <!--        end Mesonry Grid-->
+        </div>
 
-
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/736x/dd/45/96/dd4596b601062eb491ea9bb8e3a78062&#45;&#45;two-faces-baby-faces.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="http://www.marklobo.com.au/news/wp-content/uploads/2013/03/Melbourne_Portrait_Photographer_Mark_Lobo-Cowboy.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="https://format-com-cld-res.cloudinary.com/image/private/s&#45;&#45;PcYqe7Zw&#45;&#45;/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/145054-8576001-Rob-Green-by-Zuzana-Breznanikova_7725_b_w.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="http://www.iefimerida.gr/sites/default/files/janbanning11.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/736x/66/bb/e7/66bbe7acc0d64da627afef440a29714b&#45;&#45;portrait-photos-female-portrait.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/736x/25/34/b6/2534b6c18c659546463f13b2dc62d4ce&#45;&#45;natural-portraits-female-portraits.jpg" />-->
-<!--            </div>-->
-
-<!--            <div class="grid-item">-->
-<!--                <img src="https://s-media-cache-ak0.pinimg.com/originals/8d/67/12/8d671230ced871df8428b571ed6ec192.jpg" />-->
-<!--            </div>-->
-
-<!--        </div>-->
-        <!--        end Mesonry Grid-->
 
         <div class="product_wrap">
             <div class="container">
@@ -211,7 +208,7 @@
     </section>
 
     <section class="project_gallery">
-        <h1>Projects Gallery</h1>
+        <h1 class="text-center">Projects Gallery</h1>
         <div class="">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -236,88 +233,82 @@
     </section>
 
     <section class="team">
-        <h1>Meet Our People</h1>
+        <h1 class="text-center">Meet Our People</h1>
 
         <div class="carousel-wrap">
             <div class="owl-carousel">
                 <div class="item">
-                    <img src="http://placehold.it/150x150">
+                    <img src="images/pexels-rene-asmussen.png">
                     <h2>John Doe</h2>
                     <h4>Founder</h4>
                 </div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
+                <div class="item">
+                    <img src="images/pexels-jeff-denlea-3714743.png">
+                    <h2>John Doe</h2>
+                    <h4>Founder</h4>
+                </div>
+                <div class="item">
+                    <img src="images/pexels-christina-morillo-1181695.png">
+                    <h2>John Doe</h2>
+                    <h4>Founder</h4>
+                </div>
+                <div class="item">
+                    <img src="images/pexels-jeff-denlea-3714743.png">
+                    <h2>John Doe</h2>
+                    <h4>Founder</h4>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contact">
         <div class="container text-center">
-            <h1>Come To Get World Class
+            <h1>Come To Get World Class <br>
                 Business Service</h1>
             <p>Making sure customers feel important will ensure that they would have no hesitation in dealing</p>
-            <button type="button" class="btn btn-primary">Trending Item</button>
+            <button type="button" class="btn btn-primary">Contact Us</button>
         </div>
 
     </section>
 
     <section class="clients">
-        <h1>Our Clients</h1>
+        <h1 class="text-center">Our Clients</h1>
         <div class="carousel-wrap">
             <div class="owl-carousel">
-                <div class="item">
-                    <img src="http://placehold.it/150x150">
-                    <h2>John Doe</h2>
-                    <h4>Founder</h4>
-                </div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
+                <div class="item"><img src="images/apple.jpg"></div>
+                <div class="item"><img src="images/hp.jpg"></div>
+                <div class="item"><img src="images/lenovo.jpg"></div>
             </div>
         </div>
     </section>
     
     <section class="beautiful_bangladesh">
-        <div class="container-fluid">
-            <h1>Beautiful Bangladesh</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/at_a_glance.png" alt="">
-                    <h5>At a glance</h5>
+        <h1 class="text-center">Beautiful Bangladesh</h1>
+        <div class="bb_image_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/at_a_glance.jpg" alt="">
+                        <h5 style="color: #4A4A49">At a glance</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/bibi-russell-1.png" alt="">
+                        <h5>Bibi Russell</h5>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/bibi-russell-1.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/at_a_glance.png" alt="">
-                    <h5>Pahela Baishakh</h5>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/bibi-russell-1.png" alt="">
-                    <button type="button" class="btn btn-light">Trending Item</button>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/pahela_baishak.png" alt="">
+                        <h5 style="left: 36%">Pahela Baishakh</h5>
+                    </div>
+                    <div class="col-md-6 bundle_img">
+                        <img src="images/group_14.jpg" alt="">
+                        <button type="button" class="btn btn-light">Trending Item</button>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
     </section>
     
     <footer>
@@ -326,12 +317,13 @@
                 <div class="col-md-4">
                     <div class="footer_left">
                         <img src="images/final_logo.png" alt="">
+
                         <p>The Royal Purple Linen aims to showcase the strengths of its versatile and abundant range to national & international cluster which has become a prominent sourcing base for garment exports.</p>
                         <div class="social">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="icofont-facebook"></i></a>
+                            <a href="#"><i class="icofont-twitter"></i></a>
+                            <a href="#"><i class="icofont-linkedin"></i></a>
+                            <a href="#"><i class="icofont-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -351,39 +343,33 @@
                         <h4>Latest News</h4>
                         <div class="row">
                             <div class="col-6">
-                                <img src="images/footer_right_1.png" alt="">
-                                <div class="footer_right_text">
-                                    <small>Finance and leagal work</small>
-                                    <small>22 September,2020</small>
-                                </div>
+                                <img src="images/footer_right_img_1.jpg" alt="">
+<!--                                <div class="footer_right_text">-->
+<!--                                    <small>Finance and leagal work</small>-->
+<!--                                    <small>22 September,2020</small>-->
+<!--                                </div>-->
                             </div>
                             <div class="col-6">
-                                <img src="images/footer_right_1.png" alt="">
-                                <div class="footer_right_text">
-                                    <small>Finance and leagal work</small>
-                                    <small>22 September,2020</small>
-                                </div>
+                                <img src="images/footer_right_img_2.jpg" alt="">
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <img src="images/footer_right_1.png" alt="">
-                                <div class="footer_right_text">
-                                    <small>Finance and leagal work</small>
-                                    <small>22 September,2020</small>
-                                </div>
+                                <img src="images/footer_right_img_3.jpg" alt="">
+
                             </div>
                             <div class="col-6">
-                                <img src="images/footer_right_1.png" alt="">
-                                <div class="footer_right_text">
-                                    <small>Finance and leagal work</small>
-                                    <small>22 September,2020</small>
-                                </div>
+                                <img src="images/footer_right_img_4.jpg" alt="">
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="copyRight text-center">
+            <p><i class="icofont-copyright"></i> Copyright 2020</p>
         </div>
     </footer>
 
@@ -460,7 +446,8 @@
                     items: 3
                 }
             }
-        })
+        });
+
     </script>
 
 

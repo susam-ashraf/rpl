@@ -1,0 +1,243 @@
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    header img {
+        height: unset;
+    }
+    header .content {
+        top: 70px;
+        left: 21px;
+    }
+    header .content h1 {
+        font-size: 15px;
+    }
+    header .content h3 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    header .content .btn-primary {
+        font-size: 9px;
+        padding: 3px 9px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 11px;
+        color: #4E2B71 !important;
+        padding: 10px 31px;
+    }
+    .about_us .justify-content-end {
+        justify-content: center !important;
+    }
+    .about_right {
+        margin-right: 0px;
+    }
+    .about_right p {
+        margin-top: 25px;
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .about_right .btn-light {
+        font-size: 11px;
+        border-radius: 8px;
+        padding: 3px 10px;
+        margin-top: 0px;
+    }
+    .about_us h1 {
+        font-size: 18px;
+    }
+    .about_us {
+        padding-top: 26px;
+        padding-bottom: 20px;
+    }
+    .success_banner_img img {
+        width: 115px;
+        left: 35%;
+    }
+    .success {
+        padding-top: 15px;
+    }
+    .success_box {
+        border-radius: 30px;
+        height: 105px;
+        top: 55px;
+    }
+    .success_box h2 {
+        margin-top: 66px;
+        font-size: 24px;
+    }
+    .success_count {
+        padding-top: 65px;
+        padding-bottom: 50px;
+        margin-top: 7px;
+    }
+    .success_count .row {
+        margin-left: 0;
+    }
+    .product_line h1 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .product_line {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .product_img_left {
+        width: 260px;
+        height: 220px;
+        margin-bottom: 80px;
+    }
+    .product_img_left::after {
+        top: -25px;
+        left: 25px;
+    }
+    .product_img_left::before {
+        top: 75px;
+        left: 101px;
+        font-size: 24px;
+    }
+    .product_img_right {
+        width: 260px;
+        height: 220px;
+    }
+    .product_img_right::after {
+        top: -25px;
+        left: 25px;
+    }
+    .product_img_right::before {
+        top: 75px;
+        left: 101px;
+        font-size: 24px;
+    }
+    .project_gallery h1 {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .team {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .team h1 {
+        font-size: 20px;
+    }
+    .carousel-wrap {
+        margin: 20px auto;
+        margin-bottom: 20px;
+    }
+    .owl-nav{
+        display: none;
+    }
+    .owl-carousel .item h2 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .owl-carousel .item h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .contact h1 {
+        font-size: 20px;
+    }
+    .contact {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contact p {
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact .btn-primary {
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 3px 25px;
+    }
+    .clients h1 {
+        font-size: 20px;
+    }
+    .clients {
+        padding-top: 20px;
+    }
+    .clients .carousel-wrap {
+        margin: 20px auto;
+        margin-bottom: 10px;
+        padding: 25px 5%;
+    }
+    .beautiful_bangladesh h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .bb_image_wrap .row {
+        margin-left: 0;
+    }
+    .bb_image_wrap .row .col-md-6 {
+        margin-bottom: 20px;
+    }
+    .beautiful_bangladesh h5 {
+        font-size: 15px;
+    }
+    .bundle_img .btn-light {
+        font-size: 15px;
+        top: 36%;
+        left: 34%;
+    }
+    .beautiful_bangladesh {
+        margin-bottom: 30px;
+    }
+    .footer_left img {
+        margin-left: 0px;
+    }
+    .footer_left p {
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .footer_left .social a {
+        padding: 9px 12px;
+        font-size: 15px;
+    }
+    .footer_middle h4 {
+        font-size: 17px;
+        margin-top: 35px;
+    }
+    .footer_middle a {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer_right h4 {
+        font-size: 17px;
+        margin-top: 35px;
+    }
+
+
+
+
+
+    }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+
+
+}

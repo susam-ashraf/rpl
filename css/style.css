@@ -53,42 +53,55 @@ header .content .btn-primary {
     border-bottom: 1px solid #707070;
 }
 .about_us{
+    background: url(../images/about_us_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
 
-}
-.about_left{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.about_left img{
-    width: 100%;
-}
-.about_left h1{
+.about_us h1{
     font-family: 'goboldLowplus', cursive;
     font-size: 53px;
     color: #4E2B71;
-    margin-top: 85px;
-    margin-bottom: 85px;
-    margin-right: 100px;
 }
+
 .about_right{
-    background: url("../images/about_right_bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 285px;
+    margin: unset;
+    margin-right: 65px;
+    text-align: center;
 }
 .about_right p{
-    margin-top: 300px;
+    margin-top: 150px;
+    font-family: 'goboldLowplus', cursive;
+    font-size: 18px;
+    color: #fff;
+}
+.about_right .btn-light {
+    font-size: 24px;
+    color: #4E2B71;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'goboldLowplus', cursive;
+    margin-top: 25px;
+
 }
 .success {
     padding-top: 50px;
+    border-bottom: 1px solid #707070;
 }
 .success_banner_img{
     position: relative;
 }
 .success_banner_img img{
-    width: 220px;
+    width: 230px;
     position: absolute;
     top: 0;
-    left: 37vw;
+    left: 40%;
     z-index: 15;
 }
 .success_banner_txt{
@@ -107,7 +120,10 @@ header .content .btn-primary {
     z-index: 10;
 }
 .success_box h2{
-    margin-top: 80px;
+    margin-top: 109px;
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #4E2B71;
 }
 
 .counter {
@@ -116,19 +132,43 @@ header .content .btn-primary {
 }
 .count_wrap{
     background: #4E2B71;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+.count_wrap i{
+    font-size: 53px;
+}
+.count_wrap h1{
+    font-size: 30px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-family: 'goboldLowplus', cursive;
+}
+.count_wrap h3{
+    font-size: 18px;
+    font-family: 'goboldLowplus', cursive;
+    margin-bottom: 0px;
 }
 .success_count{
     background: #F3F3F3;
-    padding-top: 100px;
+    padding-top: 170px;
     padding-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 13px;
 }
 
-
-
-
+.product_line{
+    background: #4E2B71;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.product_line h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 70px;
+}
 
 
 /* Step 1: start with resetting some defaults */
@@ -136,7 +176,7 @@ header .content .btn-primary {
 * {
     margin: 0 auto;
     /*padding: 0;*/
-    /*max-width: 100%;  stopped for owl carousel  */
+    max-width: 100%;
 }
 
 
@@ -152,7 +192,7 @@ header .content .btn-primary {
 /* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
 
 .grid-item {
-    padding: 5px;
+    padding: 0px;
     box-sizing: border-box;
     display:inline;
     position: relative;
@@ -173,7 +213,7 @@ header .content .btn-primary {
     width: 100%;
 }
 .product_img_left::after{
-    content: "Accessories";
+    content: "";
     width: 100%;
     height: 100%;
     background: url("../images/accessories.png");
@@ -181,6 +221,16 @@ header .content .btn-primary {
     position: absolute;
     top: -40px;
     left: 40px;
+}
+.product_img_left::before {
+    content: "Accessories";
+    position: absolute;
+    top: 95px;
+    left: 140px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'goboldLowplus', cursive;
+    z-index: 99;
 }
 .product_img_right{
     width: 350px;
@@ -191,7 +241,7 @@ header .content .btn-primary {
     width: 100%;
 }
 .product_img_right::after{
-    content: "Home textile";
+    content: "";
     width: 100%;
     height: 100%;
     background: url("../images/home_textile.png");
@@ -200,12 +250,40 @@ header .content .btn-primary {
     top: -40px;
     left: -40px;
 }
+.product_img_right::before {
+    content: "Home textile";
+    position: absolute;
+    top: 95px;
+    left: 63px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'goboldLowplus', cursive;
+    z-index: 99;
+}
 
 
+.product_wrap{
+    margin-top: 120px;
+}
 
-
-
-
+.project_gallery h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #4E2B71;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.team{
+    background: #F3F3F3;
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.team h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #4E2B71;
+}
 
 
 
@@ -237,13 +315,12 @@ header .content .btn-primary {
 
 
 
-
-
 .carousel-wrap {
-    margin: 90px auto;
+    margin: 70px auto;
     padding: 0 5%;
-    width: 80%;
+    width: 100%;
     position: relative;
+    margin-bottom: 40px;
 }
 
 /* fix blank or flashing items on carousel */
@@ -251,6 +328,20 @@ header .content .btn-primary {
     position: relative;
     z-index: 100;
     -webkit-backface-visibility: hidden;
+}
+.owl-carousel .item h2{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 30px;
+    color: #4B2576;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.owl-carousel .item h4{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 24px;
+    color: #232323;
+    text-align: center;
 }
 
 /* end fix */
@@ -272,29 +363,186 @@ header .content .btn-primary {
 .owl-nav .owl-next {
     right: -30px;
 }
+.owl-carousel .owl-stage {
+    max-width: unset !important;
+}
 
+.contact{
+    background: url("../images/get_in_touch.png");
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #fff;
+}
+.contact p{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.contact .btn-primary {
+    font-size: 36px;
+    color: #673E61;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 20px;
+    padding: 20px 70px;
+    font-family: 'goboldLowplus', cursive;
+}
+.clients{
+    padding-top: 60px;
+}
+.clients h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #4E2B71;
+}
+.clients .carousel-wrap {
+    margin: 60px auto;
+    margin-bottom: 50px;
+    padding: 70px 5%;
+    background: url('../images/client.png');
+}
+.beautiful_bangladesh{
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+.beautiful_bangladesh h1{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 48px;
+    color: #59A324;
+    margin-bottom: 60px;
+}
+.bb_image_wrap{
+    background: #59A324;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.bb_image_wrap .row{
+    margin-bottom: 30px;
+}
+.bundle_img .btn-light{
+    font-family: 'goboldLowplus', cursive;
+    font-size: 21px;
+    border-radius: 0;
+    color: #4A4A49;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    border-color: #707070;
+}
 .beautiful_bangladesh img{
     width: 100%;
 }
+.beautiful_bangladesh h5{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-family: 'goboldLowplus', cursive;
+    font-size: 24px;
+    color: #fff;
+}
 footer{
     background: #404040;
+    padding-top: 40px;
+}
+footer .container{
+    padding-bottom: 70px;
+}
+.footer_left{
+
+}
+.footer_left img{
+    width: 35%;
+    margin-left: 42px;
+}
+.footer_left p{
+    margin: unset;
+    font-size: 16px;
+    font-family: 'goboldLowplus', cursive;
+    color: #fff;
+    max-width: 238px;
+    margin-top: 25px;
+    margin-bottom: 60px;
 }
 .footer_left .social a{
     display: inline;
-    padding: 10px 20px;
+    padding: 10px 13px;
+    margin-right: 5px;
     background: #fff;
+    font-size: 24px;
+    color: #673E61;
+    text-decoration: none;
 }
 .footer_middle a{
     display: block;
+    font-size: 18px;
+    font-family: 'goboldLowplus', cursive;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 19px;
+}
+.footer_middle h4{
+    font-size: 24px;
+    font-family: 'goboldLowplus', cursive;
+    color: #fff;
+    position: relative;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+.footer_middle h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 33%;
+    border-bottom: 3px solid #EEFF03;
 }
 .footer_right{
     position: relative;
 }
+.footer_right h4{
+    font-size: 24px;
+    font-family: 'goboldLowplus', cursive;
+    color: #fff;
+    position: relative;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+.footer_right h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 37%;
+    border-bottom: 3px solid #EEFF03;
+}
 .footer_right img{
     width: 100%;
+    margin-bottom: 20px;
 }
 .footer_right_text{
     position: absolute;
     top: 0;
     left: 0;
+}
+.copyRight{
+    background: #3E3E3E;
+    padding: 15px 10px;
+}
+.copyRight i{
+    color: #fff;
+    font-size: 24px;
+}
+.copyRight p{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'goboldLowplus', cursive;
+    margin-bottom: 0px;
 }
